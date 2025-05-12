@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto:wght@400;700&display=swap"
-        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <title>LANDING PAGE</title>
     <style>
@@ -14,13 +13,13 @@
             padding: 0;
             box-sizing: border-box;
         }
-
+        
         body {
             line-height: 1.6;
             background: linear-gradient(145deg, #000c1f, #000000);
             font-family: 'Roboto', sans-serif;
         }
-
+        
         header {
             background: url('LP.avif');
             background-size: cover;
@@ -30,7 +29,7 @@
             opacity: 0.8;
             border-bottom: 3px solid #072163;
         }
-
+        
         .Header-container {
             display: flex;
             flex-direction: column;
@@ -40,7 +39,7 @@
             justify-content: center;
             text-align: center;
         }
-
+        
         .logo h1 {
             font-size: 3.5rem;
             color: #1f9eff;
@@ -48,17 +47,17 @@
             text-shadow: 2px 5px 10px #1f9eff;
             transition: transform 0.3s ease;
         }
-
+        
         .logo h1:hover {
             transform: scale(1.1);
         }
-
+        
         .nav-links {
             display: flex;
             gap: 1.5rem;
             margin-top: 1rem;
         }
-
+        
         .nav-links a {
             color: #ccc;
             text-decoration: none;
@@ -67,7 +66,7 @@
             padding: 0.5rem 0;
             font-family: 'Orbitron', sans-serif;
         }
-
+        
         .nav-links a::after {
             content: '';
             position: absolute;
@@ -78,43 +77,43 @@
             left: 0;
             transition: width 0.3s;
         }
-
+        
         .nav-links a:hover::after,
         .nav-links a:focus::after {
             width: 100%;
         }
-
+        
         .bio-content {
             margin-top: 3rem;
             max-width: 700px;
             color: white;
         }
-
+        
         .bio-content h1 {
             font-size: 2.5rem;
             font-weight: 700;
         }
-
+        
         .bio-content h2 {
             font-size: 1.5rem;
             margin: 0.8rem 0;
             font-weight: 500;
             color: #1f9eff;
         }
-
+        
         .bio-tagline {
             font-size: 1.1rem;
             line-height: 1.6;
             padding: 0 2rem;
             margin-bottom: 1.5rem;
         }
-
+        
         .hero-buttons {
             display: flex;
             gap: 1rem;
             justify-content: center;
         }
-
+        
         .primary-button,
         .secondary-button {
             background-size: 0% 100%;
@@ -129,43 +128,43 @@
             font-family: 'Orbitron', sans-serif;
             transition: all 0.3s, transform 0.2s;
         }
-
+        
         .primary-button {
             text-decoration: none;
             background-color: #1f9eff;
             color: white;
         }
-
+        
         .primary-button:hover {
             background-color: #0d6db5;
             transform: scale(1.05);
         }
-
+        
         .secondary-button {
             background-color: transparent;
             color: #1f9eff;
             border: 2px solid #1f9eff;
         }
-
+        
         .secondary-button:hover {
             background-size: 100% 100%;
             color: white;
             transform: scale(1.05);
         }
-
+        
         section {
             padding: 60px 0;
             color: white;
             text-align: center;
             background-color: #111;
         }
-
+        
         section h2 {
             font-size: 2rem;
             color: #1f9eff;
             margin-bottom: 1rem;
         }
-
+        
         #home {
             background-color: #072163;
             padding: 2rem;
@@ -180,12 +179,12 @@
             line-height: 1.6;
             transition: all 200ms ease;
         }
-
+        
         #home:hover {
             transform: translateY(-10px);
             box-shadow: 0 0 10px #1f9eff;
         }
-
+        
         #about {
             background-color: #072163;
             padding: 2rem;
@@ -200,12 +199,12 @@
             line-height: 1.6;
             transition: all 200ms ease;
         }
-
+        
         #about:hover {
             transform: translateY(-10px);
             box-shadow: 0 0 10px #1f9eff;
         }
-
+        
         #services {
             background-color: #072163;
             padding: 2rem;
@@ -220,12 +219,12 @@
             line-height: 1.6;
             transition: all 200ms ease;
         }
-
+        
         #services:hover {
             transform: translateY(-10px);
             box-shadow: 0 0 10px #1f9eff;
         }
-
+        
         #contact {
             background-color: #072163;
             padding: 2rem;
@@ -240,179 +239,281 @@
             line-height: 1.6;
             transition: all 200ms ease;
         }
-
+        
         #contact:hover {
             transform: translateY(-10px);
             box-shadow: 0 0 10px #1f9eff;
         }
-
+        
         .social-icon i {
             transition: all 200ms ease;
         }
-
+        
         .social-icon i:hover {
             color: #1f9eff;
             transform: scale(1.2);
         }
-
         /* Popup Form Styles */
-
+        
         .popup-overlay {
+            /* Styles the overlay that covers the background when the popup is visible */
             display: none;
+            /* Initially hides the overlay */
             position: fixed;
+            /* Fixes the overlay to the viewport, so it doesn't scroll */
             top: 0;
+            /* Sets the top edge to the top of the viewport */
             left: 0;
+            /* Sets the left edge to the left of the viewport */
             width: 100%;
+            /* Makes the overlay span the entire width of the viewport */
             height: 100%;
+            /* Makes the overlay span the entire height of the viewport */
             background-color: rgba(0, 0, 0, 0.8);
+            /* Sets a semi-transparent black background */
             z-index: 1000;
+            /* Ensures the overlay is on top of other elements */
             justify-content: center;
+            /* Centers the content (popup form) horizontally */
             align-items: center;
+            /* Centers the content (popup form) vertically */
         }
-
+        
         .popup-form {
-            background: linear-gradient(145deg, #000c1f, #072163);
-            padding: 2rem;
-            border-radius: 10px;
-            width: 90%;
-            max-width: 500px;
-            border: 2px solid #1f9eff;
-            box-shadow: 0 0 20px #1f9eff;
             position: relative;
+            /* Styles the container for the popup form */
+            background: linear-gradient(145deg, #000c1f, #072163);
+            /* Sets a linear gradient background */
+            padding: 2rem;
+            /* Adds 2rem of padding on all sides */
+            border-radius: 10px;
+            /* Rounds the corners by 10 pixels */
+            width: 90%;
+            /* Sets the width to 90% of its parent container */
+            max-width: 500px;
+            /* Sets a maximum width of 500 pixels */
+            border: 2px solid #1f9eff;
+            /* Adds a 2-pixel solid border with the color #1f9eff */
+            box-shadow: 0 0 20px #1f9eff;
+            /* Adds a glowing box shadow */
+            position: relative;
+            /* Sets the positioning context to relative for absolute positioning of child elements (like the close button) */
         }
-
+        
         .close-btn {
+            /* Styles the close button of the popup */
             position: absolute;
-            top: 10px;
-            right: 15px;
+            /* Positions the button relative to the nearest positioned ancestor (.popup-form) */
+            top: 8px;
+            /* Positions the top edge 8 pixels from the top of the parent */
+            right: 18px;
+            /* Positions the right edge 18 pixels from the right of the parent */
             font-size: 1.5rem;
+            /* Sets the font size to 1.5rem */
             color: #1f9eff;
+            /* Sets the text color to #1f9eff */
             cursor: pointer;
+            /* Changes the cursor to a pointer on hover */
             transition: all 0.3s;
+            /* Adds a smooth transition for all properties */
         }
-
+        
         .close-btn:hover {
+            /* Styles the close button on hover */
             color: white;
+            /* Changes the text color to white on hover */
             transform: scale(1.2);
+            /* Scales the button to 120% on hover */
         }
-
+        
         .form-title {
+            /* Styles the title of the form */
             color: #1f9eff;
+            /* Sets the text color to #1f9eff */
             font-family: 'Orbitron', sans-serif;
+            /* Sets the font family */
             margin-bottom: 1.5rem;
+            /* Adds a 1.5rem bottom margin */
             text-align: center;
+            /* Centers the text */
             font-size: 1.8rem;
+            /* Sets the font size to 1.8rem */
         }
-
+        
         .form-group {
+            /* Styles a group of form elements (label and input/textarea/select) */
             margin-bottom: 1.5rem;
+            /* Adds a 1.5rem bottom margin to separate form groups */
         }
-
+        
         .form-group label {
+            /* Styles the labels for the form fields */
             display: block;
+            /* Makes the label take up the full width and appear on its own line */
             color: #ccc;
+            /* Sets the text color to #ccc */
             margin-bottom: 0.5rem;
+            /* Adds a 0.5rem bottom margin to separate the label from the input */
             font-family: 'Roboto', sans-serif;
+            /* Sets the font family */
         }
-
-        .form-group input,
-        .form-group textarea,
-        .form-group select {
+        
+        .form-group input {
             width: 100%;
             padding: 0.8rem;
-            border-radius: 5px;
+            border-radius: 1000px;
+            outline: none;
             border: 1px solid #1f9eff;
             background-color: rgba(0, 0, 0, 0.5);
             color: white;
             font-family: 'Roboto', sans-serif;
-        }
-
-        .form-group textarea {
-            height: 120px;
-            resize: vertical;
-        }
-
-        .submit-btn {
-            background: linear-gradient(to right, #1f9eff, #0d6db5);
-            color: white;
-            border: none;
-            padding: 0.8rem 1.5rem;
-            border-radius: 5px;
-            cursor: pointer;
-            font-family: 'Orbitron', sans-serif;
             font-size: 1rem;
-            width: 100%;
-            transition: all 0.3s;
+            transition: all 0.3s ease;
         }
-
-        .submit-btn:hover {
-            transform: scale(1.02);
+        
+        .form-group input:focus {
+            border-color: #1f9eff;
             box-shadow: 0 0 10px #1f9eff;
         }
-
+        
+        .form-group input:hover {
+            border-color: #1f9eff;
+            box-shadow: 0 0 10px #1f9eff;
+        }
+        
+        .form-group select {
+            /* Styles the select element within form groups */
+            width: 100%;
+            /* Makes the input/textarea/select take up the full width of its parent */
+            padding: 0.8rem;
+            /* Adds 0.8rem of padding on all sides */
+            border-radius: 1000px;
+            /* Rounds the corners by 5 pixels */
+            border: 1px solid #1f9eff;
+            /* Adds a 1-pixel solid border with the color #1f9eff */
+            background-color: rgba(0, 0, 0, 0.5);
+            /* Sets a semi-transparent black background */
+            color: white;
+            /* Sets the text color to white */
+            font-family: 'Roboto', sans-serif;
+            /* Sets the font family */
+            transition: all 0.3s ease;
+        }
+        
+        .form-group select:focus,
+        .form-group select:hover {
+            border-color: #1f9eff;
+            box-shadow: 0 0 10px #1f9eff;
+        }
+        
+        #message {
+            height: 120px;
+            width: 100%;
+            padding: 0.8rem;
+            resize: vertical;
+            outline: none;
+            border: 1px solid #1f9eff;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1rem;
+            box-shadow: 0 0 10px #1f9eff;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+        }
+        
+        #message:focus {
+            border-color: #1f9eff;
+            box-shadow: 0 0 10px #1f9eff;
+        }
+        
+        #message:hover {
+            border-color: #1f9eff;
+            box-shadow: 0 0 10px #1f9eff;
+        }
+        
+        .form-group textarea {
+            /* Specific styles for the textarea */
+            height: 120px;
+            /* Sets a fixed height of 120 pixels */
+            resize: vertical;
+            /* Allows the user to resize the textarea vertically */
+        }
+        
+        .submit-btn {
+            background-size: 0 100%;
+            background-repeat: no-repeat;
+            background-image: linear-gradient(to right, #1f9eff, #0d6db5);
+            background-position-x: center;
+            width: 100%;
+            padding: 0.8rem;
+            border-radius: 1000px;
+            outline: none;
+            border: 1px solid #1f9eff;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .submit-btn:hover {
+            background-size: 100% 100%;
+            transform: scale(1.02);
+            box-shadow: 0 0 10px 2.5px #1f9eff;
+        }
         /* Mobile Styles (up to 767px) */
-
+        
         @media (max-width: 767px) {
             .Header-container {
                 padding: 1rem 2rem;
                 min-height: auto;
             }
-
             .logo h1 {
                 font-size: 2.5rem;
             }
-
             .nav-links {
                 flex-direction: column;
                 align-items: center;
                 gap: 1rem;
                 margin-top: 0.5rem;
             }
-
             .nav-links a {
                 font-size: 1rem;
                 padding: 0.3rem 0;
             }
-
             .bio-content {
                 margin-top: 2rem;
             }
-
             .bio-content h1 {
                 font-size: 2rem;
             }
-
             .bio-content h2 {
                 font-size: 1.3rem;
                 margin: 0.5rem 0;
             }
-
             .bio-tagline {
                 font-size: 1rem;
                 padding: 0 1rem;
                 margin-bottom: 1rem;
             }
-
             .hero-buttons {
                 flex-direction: column;
                 gap: 0.8rem;
             }
-
             .primary-button,
             .secondary-button {
                 font-size: 0.9rem;
                 padding: 0.7rem 1.2rem;
             }
-
             section {
                 padding: 40px 0;
             }
-
             section h2 {
                 font-size: 1.7rem;
                 margin-bottom: 0.8rem;
             }
-
             #home,
             #about,
             #services,
@@ -421,76 +522,61 @@
                 margin: 1rem;
                 font-size: 1.2rem;
             }
-
             .popup-form {
                 padding: 1.5rem;
                 width: 95%;
             }
-
             .form-title {
                 font-size: 1.5rem;
             }
         }
-
         /* Tablet Styles (768px to 1023px) */
-
+        
         @media (min-width: 768px) and (max-width: 1023px) {
             .Header-container {
                 padding: 2rem 4rem;
             }
-
             .logo h1 {
                 font-size: 3rem;
             }
-
             .nav-links {
                 gap: 2rem;
                 margin-top: 1rem;
             }
-
             .nav-links a {
                 font-size: 1.1rem;
                 padding: 0.4rem 0;
             }
-
             .bio-content {
                 margin-top: 2.5rem;
             }
-
             .bio-content h1 {
                 font-size: 2.3rem;
             }
-
             .bio-content h2 {
                 font-size: 1.4rem;
                 margin: 0.6rem 0;
             }
-
             .bio-tagline {
                 font-size: 1.05rem;
                 padding: 0 1.5rem;
                 margin-bottom: 1.2rem;
             }
-
             .hero-buttons {
                 gap: 1rem;
             }
-
             .primary-button,
             .secondary-button {
                 font-size: 1rem;
                 padding: 0.8rem 1.5rem;
             }
-
             section {
                 padding: 50px 0;
             }
-
             section h2 {
                 font-size: 1.9rem;
                 margin-bottom: 0.9rem;
             }
-
             #home,
             #about,
             #services,
@@ -519,8 +605,7 @@
                 <h1>Welcome to AF Tech Solutions</h1>
                 <h2>Empowering Innovation with Smart Tech</h2>
                 <p class="bio-tagline">
-                    We deliver high-performance digital products tailored for startups and enterprises. From AI-driven
-                    automation to secure, scalable platforms—our mission is to turn ideas into impactful tech solutions.
+                    We deliver high-performance digital products tailored for startups and enterprises. From AI-driven automation to secure, scalable platforms—our mission is to turn ideas into impactful tech solutions.
                 </p>
                 <div class="hero-buttons">
                     <a href="SIGN-UP[IMPROVED LP].html" class="primary-button">Get Started</a>
@@ -562,7 +647,7 @@
                 </div>
                 <div class="form-group">
                     <label for="message">Project Details</label>
-                    <textarea id="message" name="message" required></textarea>
+                    <textarea type="text" id="message" name="message" required></textarea>
                 </div>
                 <button type="submit" class="submit-btn">Submit Request</button>
             </form>
@@ -571,40 +656,32 @@
 
     <section id="home">
         <h2>Home</h2>
-        <p>Welcome to AF Tech Solutions, where innovation meets execution. We specialize in delivering cutting-edge
-            technology and innovative digital solutions to businesses worldwide.</p>
+        <p>Welcome to AF Tech Solutions, where innovation meets execution. We specialize in delivering cutting-edge technology and innovative digital solutions to businesses worldwide.</p>
     </section>
 
     <section id="about">
         <h2>About Us</h2>
-        <p>We are a digital agency dedicated to creating and implementing innovative technology solutions. With years of
-            experience, we help businesses transform through digital advancements, empowering them for future growth.
+        <p>We are a digital agency dedicated to creating and implementing innovative technology solutions. With years of experience, we help businesses transform through digital advancements, empowering them for future growth.
         </p>
     </section>
 
     <section id="services">
         <h2>Our Services</h2>
-        <p>From web development and mobile app solutions to AI-powered platforms and digital marketing, we offer a full
-            range of services designed to support your business and technological needs at every step.</p>
+        <p>From web development and mobile app solutions to AI-powered platforms and digital marketing, we offer a full range of services designed to support your business and technological needs at every step.</p>
     </section>
 
     <section id="contact">
         <h2>Contact Us</h2>
-        <p>Get in touch with our team today! We'd love to help you with your next big project. Reach out to us for
-            consultations, quotes, or any inquiries you may have.</p>
+        <p>Get in touch with our team today! We'd love to help you with your next big project. Reach out to us for consultations, quotes, or any inquiries you may have.</p>
     </section>
 
-    <footer
-        style="background-color: #000c1f; padding: 2rem 1rem; text-align: center; color: #ccc; font-family: 'Orbitron', sans-serif; border-top: 2px solid #1f9eff;">
+    <footer style="background-color: #000c1f; padding: 2rem 1rem; text-align: center; color: #ccc; font-family: 'Orbitron', sans-serif; border-top: 2px solid #1f9eff;">
         <div style="margin-bottom: 1rem;">
-            <a class="social-icon" href="https://www.facebook.com/asser.fouad.3"
-                style="color: #1f9eff; margin: 0 0.5rem;"><i class="fab fa-facebook-f"></i></a>
+            <a class="social-icon" href="https://www.facebook.com/asser.fouad.3" style="color: #1f9eff; margin: 0 0.5rem;"><i class="fab fa-facebook-f"></i></a>
             <a class="social-icon" href="https://x.com/asserfouad635" style="color: #1f9eff; margin: 0 0.5rem;"><i
                     class="fab fa-twitter"></i></a>
-            <a class="social-icon" href="https://www.linkedin.com/in/asser-fouad-036672349/"
-                style="color: #1f9eff; margin: 0 0.5rem;"><i class="fab fa-linkedin-in"></i></a>
-            <a class="social-icon" href="https://github.com/asserfouad20/AF-MAIN.git"
-                style="color: #1f9eff; margin: 0 0.5rem;"><i class="fab fa-github"></i></a>
+            <a class="social-icon" href="https://www.linkedin.com/in/asser-fouad-036672349/" style="color: #1f9eff; margin: 0 0.5rem;"><i class="fab fa-linkedin-in"></i></a>
+            <a class="social-icon" href="https://github.com/asserfouad20/AF-MAIN.git" style="color: #1f9eff; margin: 0 0.5rem;"><i class="fab fa-github"></i></a>
         </div>
         <p style="margin-bottom: 0.5rem;">&copy; 2025 AF Tech Solutions. All Rights Reserved.</p>
         <p style="font-size: 0.9rem;">Designed by AF</p>
@@ -613,7 +690,7 @@
     <script>
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
+            anchor.addEventListener('click', function(e) {
                 e.preventDefault();
                 const targetId = this.getAttribute('href');
                 const targetElement = document.querySelector(targetId);
@@ -632,19 +709,19 @@
         const quoteForm = document.getElementById('quoteForm');
 
         // Show popup when Request a Quote button is clicked
-        quoteBtn.addEventListener('click', function () {
+        quoteBtn.addEventListener('click', function() {
             quotePopup.style.display = 'flex';
             document.body.style.overflow = 'hidden'; // Prevent scrolling when popup is open
         });
 
         // Close popup when X button is clicked
-        closeBtn.addEventListener('click', function () {
+        closeBtn.addEventListener('click', function() {
             quotePopup.style.display = 'none';
             document.body.style.overflow = 'auto'; // Re-enable scrolling
         });
 
         // Close popup when clicking outside the form
-        quotePopup.addEventListener('click', function (e) {
+        quotePopup.addEventListener('click', function(e) {
             if (e.target === quotePopup) {
                 quotePopup.style.display = 'none';
                 document.body.style.overflow = 'auto';
@@ -652,7 +729,7 @@
         });
 
         // Form submission handling
-        quoteForm.addEventListener('submit', function (e) {
+        quoteForm.addEventListener('submit', function(e) {
             e.preventDefault();
 
             // Here you would typically send the form data to a server
