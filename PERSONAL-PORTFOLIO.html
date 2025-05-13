@@ -20,9 +20,7 @@
     <meta name="theme-color" content="#1a1a1a">
 
     <!-- Preload Critical Resources -->
-    <link rel="preload"
-        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto:wght@400;700&display=swap"
-        as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto:wght@400;700&display=swap" as="style">
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
 
     <!-- SEO Meta Tags -->
@@ -34,30 +32,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="AF's Portfolio - Front-End Developer and Multimedia Student">
     <title>AF Portfolio | Front-End Developer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto:wght@400;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        :root {
+         :root {
             --primary: gold;
             --secondary: #1a1a1a;
             --text: #e0e0e0;
             --accent: rgba(255, 215, 0, 0.2);
         }
-
+        
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
         }
-
+        
         body {
             font-family: 'Roboto', sans-serif;
             background: linear-gradient(135deg, var(--secondary), #0d0d0d);
             color: var(--text);
             line-height: 1.6;
         }
-
+        
         header {
             background: rgba(20, 20, 20, 0.95);
             padding: 1.2rem 3rem;
@@ -75,7 +72,7 @@
             backdrop-filter: blur(5px);
             /*Adds a blur effect to the background of the header*/
         }
-
+        
         .logo {
             font-family: 'Orbitron', sans-serif;
             font-size: 2.5rem;
@@ -84,16 +81,16 @@
             letter-spacing: 2px;
             transition: transform 0.3s;
         }
-
+        
         .logo:hover {
             transform: scale(1.05);
         }
-
+        
         nav {
             display: flex;
             gap: 1.5rem;
         }
-
+        
         nav a {
             color: #ccc;
             text-decoration: none;
@@ -102,7 +99,7 @@
             /*Allows the ::after pseudo-element to be positioned relative to this link*/
             padding: 0.5rem 0;
         }
-
+        
         nav a::after {
             content: '';
             position: absolute;
@@ -118,13 +115,13 @@
             transition: width 0.3s;
             /*Creates a smooth animation for the width change on hover*/
         }
-
+        
         nav a:hover::after,
         nav a:focus::after {
             width: 100%;
             /*Expands the underline to full width on hover or focus*/
         }
-
+        
         section {
             padding: 5rem 3rem;
             max-width: 1000px;
@@ -132,7 +129,7 @@
             scroll-margin-top: 80px;
             /*Ensures the section is not hidden behind the sticky header when scrolled to*/
         }
-
+        
         .section-title {
             font-size: 2.5rem;
             color: var(--primary);
@@ -141,7 +138,7 @@
             position: relative;
             /*Allows the ::after pseudo-element to be positioned relative to this title*/
         }
-
+        
         .section-title::after {
             content: '';
             display: block;
@@ -150,7 +147,7 @@
             background: var(--primary);
             margin: 0.5rem auto 0;
         }
-
+        
         .btn {
             background-size: 0% 100%;
             background-repeat: no-repeat;
@@ -168,7 +165,7 @@
             margin: 0.5rem;
             cursor: pointer;
         }
-
+        
         .btn:hover,
         .btn:focus {
             background-size: 100% 100%;
@@ -185,7 +182,7 @@
    */
             box-shadow: 0 5px 15px gold opacity(30%);
         }
-
+        
         .card {
             background: rgba(34, 34, 34, 0.8);
             border: 1px solid #333;
@@ -195,12 +192,12 @@
             margin: 1.5rem 0;
             transition: transform 0.3s, box-shadow 0.3s;
         }
-
+        
         .card:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 20px var(--accent);
         }
-
+        
         .skills ul {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -208,7 +205,7 @@
             list-style: none;
             padding: 0;
         }
-
+        
         .skills li {
             background: #333;
             margin: 0.5rem 0;
@@ -216,67 +213,64 @@
             border-left: 4px solid var(--primary);
             transition: transform 0.2s;
         }
-
+        
         .skills li:hover {
             transform: translateX(5px);
         }
-
+        
         .project-card {
             margin-bottom: 2rem;
         }
-
+        
         .project-card h3 {
             color: var(--primary);
             margin-bottom: 1rem;
             font-size: 1.5rem;
         }
-
+        
         .btn-group {
             display: flex;
             flex-wrap: wrap;
             gap: 1rem;
             margin-top: 1rem;
         }
-
+        
         footer {
             text-align: center;
             padding: 2rem;
             background: rgba(20, 20, 20, 0.9);
             border-top: 1px solid #333;
         }
-
+        
         .social-links {
             display: flex;
             justify-content: center;
             gap: 1.5rem;
             margin: 1rem 0;
         }
-
+        
         .social-links a {
             color: #ccc;
             font-size: 1.5rem;
             transition: color 0.3s, transform 0.3s;
         }
-
+        
         .social-links a:hover {
             color: var(--primary);
             transform: translateY(-3px);
         }
-
+        
         @media (max-width: 768px) {
             header {
                 padding: 1rem;
                 flex-direction: column;
             }
-
             nav {
                 margin-top: 1rem;
             }
-
             section {
                 padding: 3rem 1.5rem;
             }
-
             .btn-group {
                 flex-direction: column;
             }
@@ -299,11 +293,9 @@
     <section id="about">
         <h2 class="section-title">About Me</h2>
         <div class="card">
-            <p>I am a passionate first-year Software Industry and Multimedia student at Alexandria National University
-                (ANU), specializing in Front-End Development with expertise in HTML, CSS, and JavaScript. I also have
-                foundational knowledge in C++, Python, and Java.</p>
-            <p><strong><i class="fas fa-seedling"></i> Currently Learning:</strong> Advanced JavaScript concepts and
-                exploring React framework.</p>
+            <p>I am a passionate first-year Software Industry and Multimedia student at Alexandria National University (ANU), specializing in Front-End Development with expertise in HTML, CSS, and JavaScript. I also have foundational knowledge in C++, Python,
+                and Java.</p>
+            <p><strong><i class="fas fa-seedling"></i> Currently Learning:</strong> Advanced JavaScript concepts and exploring React framework.</p>
             <p><strong><i class="fas fa-rocket"></i> Future Goals:</strong></p>
             <ul>
                 <li>Become a proficient Front-End Developer creating engaging web experiences</li>
@@ -332,8 +324,8 @@
 
         <div class="card project-card">
             <h3>Digital Agency Website</h3>
-            <p>A responsive landing page built with modern HTML and CSS, showcasing services with animations and clean
-                design.</p>
+            <p>A responsive landing page built with modern HTML and CSS, showcasing services with animations and clean design.
+            </p>
             <div class="btn-group">
                 <a href="https://github.com/asserfouad20/CODSOFT.git" target="_blank" class="btn"><i
                         class="fab fa-github"></i> View Code</a>
@@ -356,8 +348,7 @@
         <h2 class="section-title">Resume</h2>
         <div class="card">
             <p>Download my resume to learn more about my education, skills, and experience.</p>
-            <button class="btn"
-                onclick="window.open('//drive.google.com/file/d/10gm_gwbwLNfgpdVAdq3-MS_DRMiBCKNd/view?usp=drive_link')"><i
+            <button class="btn" onclick="window.open('https://drive.google.com/file/d/1BpjkXPJL9RRuak1mcB0EcNkDrsOMVrgb/view?usp=drive_link')"><i
                     class="fas fa-download"></i> Download Resume</button>
         </div>
     </section>
@@ -382,7 +373,7 @@
     <script>
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => { // Selects all anchor tags whose href attribute starts with '#' and iterates through them.
-            anchor.addEventListener('click', function (e) { // Adds a click event listener to each selected anchor tag.
+            anchor.addEventListener('click', function(e) { // Adds a click event listener to each selected anchor tag.
                 e.preventDefault(); // Prevents the default behavior of the anchor tag (jumping to the target).
                 const targetId = this.getAttribute('href'); // Gets the value of the href attribute (the target ID) of the clicked link.
                 const targetElement = document.querySelector(targetId); // Selects the HTML element in the document that has the ID matching the targetId.
@@ -393,7 +384,6 @@
                 });
             });
         });
-
     </script>
 
 </body>
