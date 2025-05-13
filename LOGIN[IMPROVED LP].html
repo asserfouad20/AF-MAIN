@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <title>Login</title>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto:wght@400;700&display=swap"
-        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <style>
         * {
@@ -14,7 +13,7 @@
             box-sizing: border-box;
             font-family: 'Orbitron', sans-serif;
         }
-
+        
         body {
             display: flex;
             justify-content: center;
@@ -23,7 +22,7 @@
             background: linear-gradient(145deg, #000c1f, #000000);
             color: #1f9eff;
         }
-
+        
         .form-title {
             font-size: 2rem;
             margin-bottom: 2rem;
@@ -31,12 +30,12 @@
             text-shadow: 0 0 10px #1f9eff;
             transition: all 0.3s ease;
         }
-
+        
         .form-title:hover {
             text-shadow: 0 0 20px #1f9eff;
             transform: scale(1.1);
         }
-
+        
         #login-form {
             display: flex;
             flex-direction: column;
@@ -48,12 +47,12 @@
             border-radius: 20px;
             box-shadow: 0 0 20px rgba(31, 158, 255, 0.3);
         }
-
+        
         .form-group {
             position: relative;
             margin-bottom: 2rem;
         }
-
+        
         .form-input {
             width: 100%;
             padding: 1.2rem 1rem 0.8rem;
@@ -64,14 +63,14 @@
             font-size: 1rem;
             transition: all 0.4s ease;
         }
-
+        
         .form-input:focus {
             outline: none;
             background: #1e272e;
             box-shadow: 0 0 0 2px #1f9eff, 0 0 20px #1f9eff;
             transform: translateY(-2px);
         }
-
+        
         .form-label {
             position: absolute;
             top: 50%;
@@ -81,7 +80,7 @@
             font-size: 1rem;
             transition: all 0.3s ease;
         }
-
+        
         .form-input:focus+.form-label,
         .form-input:not(:placeholder-shown)+.form-label {
             top: 0.2rem;
@@ -90,7 +89,7 @@
             color: #1f9eff;
             text-shadow: 0 0 8px #1f9eff;
         }
-
+        
         .form-button {
             width: 100%;
             padding: 1rem;
@@ -104,11 +103,23 @@
             cursor: pointer;
             transition: all 0.3s ease;
         }
-
+        
         .form-button:hover {
             background-color: #1f9eff;
             color: black;
             box-shadow: 0 0 20px #1f9eff;
+        }
+        
+        @media (max-width: 600px) {
+            #login-wrapper {
+                padding: 1rem;
+            }
+            .form-title {
+                font-size: 1.5rem;
+            }
+            .form-button {
+                font-size: 0.9rem;
+            }
         }
     </style>
 </head>
@@ -134,7 +145,7 @@
     </div>
 </body>
 <script>
-    document.getElementById('login-form').addEventListener('submit', function (event) {
+    document.getElementById('login-form').addEventListener('submit', function(event) {
         event.preventDefault();
 
         const email = document.getElementById('email').value;
