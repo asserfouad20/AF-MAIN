@@ -153,9 +153,9 @@
 
         isValid = true;
 
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const emailRegex = /^[^\s@]+@[^\s@]+\.(com)$/;
         if (!emailRegex.test(email)) {
-            alert('Please enter a valid email address');
+            alert('Please enter a valid email address (only .com allowed)');
             isValid = false;
         }
 
