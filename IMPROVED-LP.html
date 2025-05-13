@@ -256,106 +256,62 @@
         /* Popup Form Styles */
         
         .popup-overlay {
-            /* Styles the overlay that covers the background when the popup is visible */
             display: none;
-            /* Initially hides the overlay */
             position: fixed;
-            /* Fixes the overlay to the viewport, so it doesn't scroll */
             top: 0;
-            /* Sets the top edge to the top of the viewport */
             left: 0;
-            /* Sets the left edge to the left of the viewport */
             width: 100%;
-            /* Makes the overlay span the entire width of the viewport */
             height: 100%;
-            /* Makes the overlay span the entire height of the viewport */
             background-color: rgba(0, 0, 0, 0.8);
-            /* Sets a semi-transparent black background */
             z-index: 1000;
-            /* Ensures the overlay is on top of other elements */
             justify-content: center;
-            /* Centers the content (popup form) horizontally */
             align-items: center;
-            /* Centers the content (popup form) vertically */
         }
         
         .popup-form {
             position: relative;
-            /* Styles the container for the popup form */
             background: linear-gradient(145deg, #000c1f, #072163);
-            /* Sets a linear gradient background */
             padding: 2rem;
-            /* Adds 2rem of padding on all sides */
             border-radius: 10px;
-            /* Rounds the corners by 10 pixels */
             width: 90%;
-            /* Sets the width to 90% of its parent container */
             max-width: 500px;
-            /* Sets a maximum width of 500 pixels */
             border: 2px solid #1f9eff;
-            /* Adds a 2-pixel solid border with the color #1f9eff */
             box-shadow: 0 0 20px #1f9eff;
-            /* Adds a glowing box shadow */
             position: relative;
-            /* Sets the positioning context to relative for absolute positioning of child elements (like the close button) */
         }
         
         .close-btn {
-            /* Styles the close button of the popup */
             position: absolute;
-            /* Positions the button relative to the nearest positioned ancestor (.popup-form) */
             top: 8px;
-            /* Positions the top edge 8 pixels from the top of the parent */
             right: 18px;
-            /* Positions the right edge 18 pixels from the right of the parent */
             font-size: 1.5rem;
-            /* Sets the font size to 1.5rem */
             color: #1f9eff;
-            /* Sets the text color to #1f9eff */
             cursor: pointer;
-            /* Changes the cursor to a pointer on hover */
             transition: all 0.3s;
-            /* Adds a smooth transition for all properties */
         }
         
         .close-btn:hover {
-            /* Styles the close button on hover */
             color: white;
-            /* Changes the text color to white on hover */
             transform: scale(1.2);
-            /* Scales the button to 120% on hover */
         }
         
         .form-title {
-            /* Styles the title of the form */
             color: #1f9eff;
-            /* Sets the text color to #1f9eff */
             font-family: 'Orbitron', sans-serif;
-            /* Sets the font family */
             margin-bottom: 1.5rem;
-            /* Adds a 1.5rem bottom margin */
             text-align: center;
-            /* Centers the text */
             font-size: 1.8rem;
-            /* Sets the font size to 1.8rem */
         }
         
         .form-group {
-            /* Styles a group of form elements (label and input/textarea/select) */
             margin-bottom: 1.5rem;
-            /* Adds a 1.5rem bottom margin to separate form groups */
         }
         
         .form-group label {
-            /* Styles the labels for the form fields */
             display: block;
-            /* Makes the label take up the full width and appear on its own line */
             color: #ccc;
-            /* Sets the text color to #ccc */
             margin-bottom: 0.5rem;
-            /* Adds a 0.5rem bottom margin to separate the label from the input */
             font-family: 'Roboto', sans-serif;
-            /* Sets the font family */
         }
         
         .form-group input {
@@ -382,21 +338,13 @@
         }
         
         .form-group select {
-            /* Styles the select element within form groups */
             width: 100%;
-            /* Makes the input/textarea/select take up the full width of its parent */
             padding: 0.8rem;
-            /* Adds 0.8rem of padding on all sides */
             border-radius: 1000px;
-            /* Rounds the corners by 5 pixels */
             border: 1px solid #1f9eff;
-            /* Adds a 1-pixel solid border with the color #1f9eff */
             background-color: rgba(0, 0, 0, 0.5);
-            /* Sets a semi-transparent black background */
             color: white;
-            /* Sets the text color to white */
             font-family: 'Roboto', sans-serif;
-            /* Sets the font family */
             transition: all 0.3s ease;
         }
         
@@ -433,11 +381,8 @@
         }
         
         .form-group textarea {
-            /* Specific styles for the textarea */
             height: 120px;
-            /* Sets a fixed height of 120 pixels */
             resize: vertical;
-            /* Allows the user to resize the textarea vertically */
         }
         
         .submit-btn {
