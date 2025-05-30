@@ -2,7 +2,7 @@
 
 > 🚀 *Crafting immersive, responsive, and accessible web experiences*  
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-Live-brightgreen?style=flat-square&logo=vercel)](https://your-portfolio-link.com)  
+[![Portfolio](https://img.shields.io/badge/Portfolio-Live-brightgreen?style=flat-square&logo=vercel)](https://github.com/asserfouad20/AF-MAIN/blob/main/PERSONAL-PORTFOLIO.html)  
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-AsserFouad-0077B5?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/asser-fouad-036672349/)  
 [![Gmail](https://img.shields.io/badge/Gmail-asserousy@gmail.com-D14836?style=flat-square&logo=gmail)](mailto:asserousy@gmail.com)  
 [![Twitter](https://img.shields.io/badge/Twitter-@asserfouad635-1DA1F2?style=flat-square&logo=twitter)](https://x.com/asserfouad635)  
@@ -23,17 +23,17 @@
 ### 🚧 [iOS-Style Calculator](#)
 - ⚙️ **Vanilla JS Mastery** – DOM manipulation, event-driven logic  
 - 🎨 **UI/UX Precision** – Apple-inspired animations and transitions  
-- 🔗 [View Code](#) • [Live Demo](#)
+- 🔗 [View Code](https://github.com/asserfouad20/AF-MAIN/blob/main/CALCULATOR.html) • [Live Demo](#)
 
 ### 🖥️ [Digital Agency Landing Page](#)
 - 💡 **Creative CSS** – Scroll animations, BEM structure, responsive grid  
 - 📱 **100% Accessibility** – Lighthouse-perfect scores  
-- 🔗 [View Code](#) • [Live Demo](#)
+- 🔗 [View Code](https://github.com/asserfouad20/AF-MAIN/blob/main/IMPROVED-LP.html) • [Live Demo](#)
 
 ### 👨‍💼 [Personal Developer Portfolio](#)
 - 🌗 **Dark/Light Mode Toggle** – CSS variables + localStorage  
 - 🚀 **Optimized Performance** – 95+ PSI score  
-- 🔗 [View Code](#) • [Live Demo](#)
+- 🔗 [View Code](https://github.com/asserfouad20/AF-MAIN/blob/main/PERSONAL-PORTFOLIO.html) • [Live Demo](#)
 
 ---
 
