@@ -23,17 +23,17 @@
 ### 🚧 [iOS-Style Calculator](#)
 - ⚙️ **Vanilla JS Mastery** – DOM manipulation, event-driven logic  
 - 🎨 **UI/UX Precision** – Apple-inspired animations and transitions  
-- 🔗 [View Code](https://github.com/asserfouad20/AF-MAIN/blob/main/CALCULATOR.html) • [Live Demo](#)
+- 🔗 [View Code](https://github.com/asserfouad20/AF-MAIN/blob/main/CALCULATOR.html) 
 
 ### 🖥️ [Digital Agency Landing Page](#)
 - 💡 **Creative CSS** – Scroll animations, BEM structure, responsive grid  
 - 📱 **100% Accessibility** – Lighthouse-perfect scores  
-- 🔗 [View Code](https://github.com/asserfouad20/AF-MAIN/blob/main/IMPROVED-LP.html) • [Live Demo](#)
+- 🔗 [View Code](https://github.com/asserfouad20/AF-MAIN/blob/main/IMPROVED-LP.html) 
 
 ### 👨‍💼 [Personal Developer Portfolio](#)
 - 🌗 **Dark/Light Mode Toggle** – CSS variables + localStorage  
 - 🚀 **Optimized Performance** – 95+ PSI score  
-- 🔗 [View Code](https://github.com/asserfouad20/AF-MAIN/blob/main/PERSONAL-PORTFOLIO.html) • [Live Demo](#)
+- 🔗 [View Code](https://github.com/asserfouad20/AF-MAIN/blob/main/PERSONAL-PORTFOLIO.html) 
 
 ---
 
@@ -41,8 +41,8 @@
 
 ### 🚀 Front-End Arsenal
 - **Languages:** HTML5, CSS3, JavaScript (ES6+)
-- **Frameworks/Libraries:** React.js *(learning)*, Tailwind CSS, GSAP
-- **Tools:** Git, VS Code, Figma
+- **Frameworks/Libraries:** React.js *(learning)*, Tailwind CSS
+- **Tools:** Git, VS Code, GitHub
 
 ### 🛠️ Engineering Practices
 - ✅ Semantic HTML & ARIA roles  
