@@ -5,7 +5,7 @@
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=asserfouad20" alt="asserfouad20" /></a> </p>
 
-- 🔭 I’ve previously worked on [Personal Portfolio [Not Updated]]](https://github.com/asserfouad20/AF-MAIN/blob/main/PERSONAL-PORTFOLIO.html)
+- 🔭 I’ve previously worked on [Personal Portfolio [Not Updated]](https://github.com/asserfouad20/AF-MAIN/blob/main/PERSONAL-PORTFOLIO.html)
 
 - 🌱 I’m currently learning **React.js⚛️[Tarmeez Academy]**
 
